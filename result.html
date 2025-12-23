@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>颜值打分结果</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app app-result">
+      <header class="app-header">
+        <div class="brand">
+          <img src="./logo.jpg" alt="logo" class="brand-logo" />
+          <div class="brand-text">
+            <h1>MIND CUBE</h1>
+            <p>心理测试平台</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="app-main single-column">
+        <section class="card card-result card-result-page">
+          <h2 class="sr-only">测试结果</h2>
+          <div class="hero-headline">
+            <h1 class="hero-title">你的颜值得分</h1>
+            <p class="hero-subtitle">
+              以下结果仅供娱乐，请带着自信和微笑继续生活 ✨
+            </p>
+            <div class="hero-divider"></div>
+          </div>
+          <div class="result-meta" id="result-meta"></div>
+          <div class="score-circle score-circle-animated">
+            <span id="score-number">0.0</span>
+          </div>
+          <p class="score-tagline" id="score-tagline"></p>
+          <div class="detail-card">
+            <h3>颜值亮点</h3>
+            <ul class="score-detail" id="score-detail"></ul>
+          </div>
+
+          <div class="analysis-card">
+            <h3>面部结构分析</h3>
+            <div class="analysis-tree" id="analysis-tree"></div>
+          </div>
+
+          <div class="cta-row">
+            <button class="primary-btn back-btn" id="back-btn">
+              再测一次
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p>本测试不会上传你的照片到服务器，所有计算都在本地浏览器完成。</p>
+        <p class="footer-link">
+          如果您也想为他人提供测试服务，<a href="https://mindcube.top" target="_blank" rel="noopener noreferrer">点击这里了解更多</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="./result.js"></script>
+  </body>
+  </html>
+
+
